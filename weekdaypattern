@@ -38,3 +38,10 @@ AddLabel(yes, if close > Average(close, 20) then "Uptrend" else "Downtrend");
 
 AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close > close from 1 bar ago ,  "Close price " + close + " is greater", Color.GREEN);
 AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close < close from 1 bar ago ,  "down", Color.RED);
+
+
+
+def sma10 = reference simplemovingavg(length=10);
+def sma30 = reference simplemovingavg(length=30);
+addOrder(OrderType.BUY_AUTO, sma10 > sma30, tickColor = GetColor(6), arrowColor = GetColor(6));
+addOrder(OrderType.SELL_AUTO, sma10 < sma30, tickColor = GetColor(5), arrowColor = GetColor(5));
