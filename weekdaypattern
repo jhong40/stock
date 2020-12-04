@@ -12,3 +12,13 @@ Tuesday: 25
 Wednesday:20
 Thursday: 22
 Friday: 22
+
+
+declare hide_on_intraday;
+input day_of_week = {default Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
+AddChartBubble(getDayofWeek(getYyyyMmDd()) == day_of_week + 1, high, "F");
+#AddChartBubble(getDayofWeek(getYyyyMmDd() and (open > close)) == day_of_week + 1, low, "D");
+AddLabel(yes, if close > Average(close, 20) then "Uptrend" else "Downtrend");
+
+AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close > close from 1 bar ago ,  "Close price " + close + " is greater", Color.GREEN);
+AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close < close from 1 bar ago ,  "down", Color.RED);
