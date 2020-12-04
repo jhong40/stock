@@ -14,6 +14,14 @@ Thursday: 22
 Friday: 22
 
 
+close>p-open 12/4 (2 year)
+Monday: 37
+Tuesday: 50
+Wednesday: 40
+Thursday: 40
+Friday: 42
+
+
 declare hide_on_intraday;
 input day_of_week = {default Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
 AddChartBubble(getDayofWeek(getYyyyMmDd()) == day_of_week + 1, high, "F");
