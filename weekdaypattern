@@ -1,4 +1,4 @@
-close>open (same day)
+close>open (same day)  52
 Monday:17
 Tuesday: 31
 Wednesday: 21
@@ -14,14 +14,14 @@ Thursday: 22
 Friday: 22
 
 
-close>p-open 12/4 (2 year)
+close>p-open 12/4 (2 year)  100
 Monday: 37
 Tuesday: 50
 Wednesday: 40
 Thursday: 40
 Friday: 42
 
-close>p-open (3 year)
+close>p-open (3 year) 150
 Monday: 58
 Tuesday: 73
 Wednesday:67
