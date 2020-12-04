@@ -21,6 +21,14 @@ Wednesday: 40
 Thursday: 40
 Friday: 42
 
+close>p-open (3 year)
+Monday: 58
+Tuesday: 73
+Wednesday:67
+Thursday: 64
+Friday: 65
+
+
 
 declare hide_on_intraday;
 input day_of_week = {default Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday};
