@@ -47,3 +47,9 @@ def sma10 = reference simplemovingavg(length=10);
 def sma30 = reference simplemovingavg(length=30);
 addOrder(OrderType.BUY_AUTO, sma10 > sma30, tickColor = GetColor(6), arrowColor = GetColor(6));
 addOrder(OrderType.SELL_AUTO, sma10 < sma30, tickColor = GetColor(5), arrowColor = GetColor(5));
+
+
+AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close > close[1] and close[1]>open[1] and close[1]>Average(close, 5),  "UUUUUUUU", Color.GREEN);
+AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close < close[1] and close[1]>open[1] and close[1]>Average(close, 5),  "dddd", Color.RED);
+
+
