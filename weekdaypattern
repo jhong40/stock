@@ -53,3 +53,14 @@ AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close > close
 AddVerticalLine(getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close < close[1] and close[1]>open[1] and close[1]>Average(close, 5),  "dddd", Color.RED);
 
 
+def uu=getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close > close[1] and close[1]>open[1] and close[1]>Average(close, 5);
+def dd=getDayofWeek(getYyyyMmDd()) == day_of_week + 1 and close < close[1] and close[1]>open[1] and close[1]>Average(close, 5);
+
+
+def uu = getDayofWeek(getYyyyMmDd())==day_of_week + 1 and close > close[1] and close[1] > MovingAverage(AverageType.EXPONENTIAL, close, 3); 
+def dd = getDayofWeek(getYyyyMmDd())==day_of_week + 1 and close < close[1] and close[1] > MovingAverage(AverageType.EXPONENTIAL, close, 3); 
+AddVerticalLine(uu,  "UUUUUUUU", Color.GREEN);
+AddVerticalLine(dd,  "dddd", Color.RED);
+
+
+
