@@ -1,4 +1,5 @@
 ABT
+BAC
 ABBV
 ATVI
 AMD
@@ -49,3 +50,4 @@ VZ
 V
 WMT
 WDC
+AMZN
