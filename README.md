@@ -5,3 +5,5 @@ https://finance.yahoo.com/screener/unsaved/12c2cb84-189f-4728-9ceb-4a25610190d1?
 # stock price
 - https://finnhub.io/
 - https://polygon.io/
+- https://iexcloud.io/
+- https://rapidapi.com/blog/best-stock-api/
